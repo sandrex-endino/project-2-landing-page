@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="header-logo">header logo</div>
+      <div class="header-link">
+        <ul>
+          <li><a href="#">header link one</a></li>
+          <li><a href="#">header link two</a></li>
+          <li><a href="#">header link three</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-main-text">this website is awesome</div>
+        <div class="hero-secondary-text">
+          this website has some subtext that goes under the
+          main title. it's a smaller font and the color is lower
+          contrast.
+        </div>
+        <button>
+          sign up
+        </button>
+      </div>
+      <div class="hero-image">
+        <img class="image" src="images/regan-monahan-UPXbZwdx78A-unsplash.jpg" alt="a picture of clouds">
+      </div>
+    </div>
+
+    <div class="white-top">
+      <div class="white-header">some random information.</div>
+      <div class="container">
+        <div class="item">
+          <img class="box-image" src="images/documerica-1cUZ3PCso_8-unsplash.jpg" alt="a man in  a subway train">
+          <div class="text">a man in  a subway train</div>
+        </div>
+        <div class="item">
+          <img class="box-image" src="images/ehimetalor-akhere-unuabona-QUP3HzSgJNk-unsplash.jpg" alt="a film photo of a moving bus">
+          <div class="text">a film photo of a moving bus</div>
+        </div>
+        <div class="item">
+          <img class="box-image" src="images/wan-san-yip-QUhcre2VzSo-unsplash.jpg" alt="a grainy photo of a hand holding a bouquet">
+          <div class="text">a grainy photo of a hand holding a bouquet</div>
+        </div>
+        <div class="item">
+          <img class="box-image" src="images/pavel-nekoranec-I__QKQLMIKs-unsplash.jpg" alt="a picture of a sculpture">
+          <div class="text">a picture of a sculpture</div>
+        </div>  
+      </div>
+    </div>
+    
+    <div class="quote-section">
+      <div class="container">
+        <div class="quote-text">
+          Snow flakes in January
+          // Heart warm like February
+          I wouldn't ordinarily
+          // March to the drum, play a fool like April
+          // May the best dance in a Juno bridal
+          // Power of the will, Julius and Augustus
+          Aw, you know, it's just us
+          // In a new semester, back in September
+          Boy, I wonder if you still remember
+        </div>
+        <div class="quoter">
+          -nujabes, luv(sic) pt4
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="white-bottom">
+      <div class="container">
+        <div class="call">call to action! it's time!
+          <div class="sign">sign up for our product by clicking that button over there!</div>
+        </div>
+        <div>
+          <button>
+            sign up
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="copyright">
+        Copyright © The Odin Project 2021
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.header {
+  background-color: #1f2937;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo{
+  color: #f9faf8;
+  font-size: 24px;
+  
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero {
+  background-color: #1f2937;
+  height: 500px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-main-text {
+  display: flex;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+  width: 350px;
+  margin-right: 180px;
+}
+
+.hero-secondary-text {
+  color: #e5e7eb;
+  font-size: 18px;
+  width: 430px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  
+}
+
+button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 22px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+
+.image {
+  flex: 1;
+  height: 330px;
+  margin: 0;
+  padding: 0;
+}
+
+.white-top {
+  background-color: #f9faf8;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.white-header {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.box-image{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 4px solid #3882f6;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-size: 18px;
+  width: 180px;
+  margin: 0;
+  padding: 10px 12px
+}
+
+
+.quote-section {
+  background-color: #e5e7eb;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.quote-section .container {
+  flex-direction: column;
+
+}
+
+.quote-text {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  color: #1f2937;
+  width: 800px;
+  
+}
+
+.quoter {
+  font-size: 18px;
+  font-weight: 900;
+  align-self: flex-end;
+}
+
+.white-bottom {
+  background-color: #f9faf8;
+  display: flex;
+  height: 400px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-bottom .container {
+  background-color: #3882f6;
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  margin: 300px;
+  padding: 50px 130px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.call {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.sign {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.white-bottom button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+  padding: 8px 22px;
+}
+
+.footer {
+  background-color: #1f2937;
+  height: 150px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #f9faf8;
+  font-size: 18px;
+}
